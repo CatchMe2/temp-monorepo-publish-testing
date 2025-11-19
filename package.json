@@ -12,18 +12,14 @@
   ],
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "test": "turbo run test",
-    "clean": "turbo run clean",
-    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "format": "prettier --write \"**/*.{ts,js,json,md}\"",
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "turbo run build && changeset publish"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.27.1",
-    "prettier": "^3.2.5",
-    "turbo": "^1.12.5"
+    "@changesets/cli": "^2.29.7",
+    "prettier": "^3.6.2",
+    "turbo": "^2.6.1"
   }
 }
