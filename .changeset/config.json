@@ -1,0 +1,11 @@
+{
+  "$schema": "https://unpkg.com/@changesets/config@2.3.1/schema.json",
+  "changelog": "@changesets/cli/changelog",
+  "baseBranch": "main",
+  "commit": false,
+  "fixed": [["@temp-monorepo-publish-testing/*"]],
+  "linked": [["@temp-monorepo-publish-testing/*"]],
+  "access": "public",
+  "updateInternalDependencies": "patch",
+  "ignore": []
+}
