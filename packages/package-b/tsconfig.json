@@ -1,17 +1,4 @@
 {
-  "compilerOptions": {
-    "target": "ES2020",
-    "module": "ESNext",
-    "lib": ["ES2020"],
-    "moduleResolution": "bundler",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "declaration": true,
-    "declarationMap": true,
-    "outDir": "./dist"
-  },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist"]
+    "extends": "@lokalise/tsconfig/tsc",
+    "include": ["src/**/*", "test/**/*",  "vitest.config.mts"]
 }
