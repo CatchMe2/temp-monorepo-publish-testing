@@ -1,7 +1,6 @@
 {
   "name": "temp-monorepo-publish-testing",
   "private": true,
-  "description": "A monorepo for temp-monorepo-publish-testing packages",
   "type": "module",
   "engines": {
     "node": ">=24.0.0",
