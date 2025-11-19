@@ -5,6 +5,5 @@
   "commit": false,
   "fixed": [["@temp-monorepo-publish-testing/*"]],
   "access": "public",
-  "updateInternalDependencies": "patch",
-  "ignore": []
+  "updateInternalDependencies": "patch"
 }
