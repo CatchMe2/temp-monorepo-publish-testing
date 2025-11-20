@@ -8,7 +8,9 @@
     "./package.json": "./package.json"
   },
   "scripts": {
-    "build": "rimraf dist && tsc -p tsconfig.build.json"
+    "build": "rimraf dist && tsc -p tsconfig.build.json",
+    "test": "vitest",
+    "test:ci": "vitest --coverage"
   },
   "keywords": [
     "temp-monorepo-publish-testing"
@@ -16,8 +18,10 @@
   "license": "MIT",
   "devDependencies": {
     "@lokalise/tsconfig": "^3.0.0",
+    "@vitest/coverage-v8": "^4.0.12",
     "rimraf": "^6.1.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "vitest": "^4.0.12"
   },
   "publishConfig": {
     "access": "public"
