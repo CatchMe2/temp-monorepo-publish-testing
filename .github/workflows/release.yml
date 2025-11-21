@@ -15,6 +15,11 @@ jobs:
       contents: write
       pull-requests: write
       packages: write
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout
@@ -32,9 +37,29 @@ jobs:
         run: npm run build
 
       - name: Create Release Pull Request or Publish to npm
+        id: changesets
         uses: changesets/action@v1
         with:
           publish: npm run release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Build Documentation
+        if: steps.changesets.outputs.published == 'true'
+        run: npm run build --workspace=docs
+
+      - name: Setup GitHub Pages
+        if: steps.changesets.outputs.published == 'true'
+        uses: actions/configure-pages@v5
+
+      - name: Upload GitHub Pages artifact
+        if: steps.changesets.outputs.published == 'true'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./docs/build
+
+      - name: Deploy to GitHub Pages
+        if: steps.changesets.outputs.published == 'true'
+        id: deployment
+        uses: actions/deploy-pages@v4
