@@ -3,6 +3,11 @@
   "version": "0.0.2",
   "description": "Example package for temp-monorepo-publish-testing monorepo a",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CatchMe2/temp-monorepo-publish-testing.git",
+    "directory": "packages/package-a"
+  },
   "exports": {
     ".": "./dist/index.js",
     "./package.json": "./package.json"
