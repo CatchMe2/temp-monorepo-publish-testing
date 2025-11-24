@@ -1,5 +1,11 @@
 # @temp-monorepo-publish-testing/package-a
 
+## 0.0.2
+
+### Patch Changes
+
+- 6d1fdc6: test release
+
 ## 0.0.1
 
 ### Patch Changes
