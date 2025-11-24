@@ -24,7 +24,7 @@ const config: Config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'CatchMe2', // Usually your GitHub org/user name.
   projectName: 'temp-monorepo-publish-testing', // Usually your repo name.
-
+  trailingSlash: false,
   onBrokenLinks: 'throw',
 
   // Even if you don't use internationalization, you can use this field to set
