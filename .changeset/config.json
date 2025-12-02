@@ -5,5 +5,8 @@
   "commit": false,
   "fixed": [["@temp-monorepo-publish-testing/*"]],
   "access": "public",
-  "updateInternalDependencies": "patch"
+  "updateInternalDependencies": "patch",
+  "___experimentalUnsafeOptions_WILL_CHANGE_IN_PATCH": {
+    "onlyUpdatePeerDependentsWhenOutOfRange": true
+  }
 }
