@@ -1,5 +1,11 @@
 # @temp-monorepo-publish-testing/package-a
 
+## 1.0.1
+
+### Patch Changes
+
+- d5cbd91: test
+
 ## 1.0.0
 
 ### Major Changes

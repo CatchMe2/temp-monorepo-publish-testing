@@ -1,6 +1,6 @@
 {
   "name": "@temp-monorepo-publish-testing/package-a",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Example package for temp-monorepo-publish-testing monorepo a",
   "type": "module",
   "repository": {
