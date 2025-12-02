@@ -23,7 +23,7 @@
     "@lokalise/tsconfig": "^3.0.0",
     "rimraf": "^6.1.0",
     "typescript": "^5.3.3",
-    "@temp-monorepo-publish-testing/package-a": "*"
+    "@temp-monorepo-publish-testing/package-a": "^1.0.0"
   },
   "peerDependencies": {
     "@temp-monorepo-publish-testing/package-a": "^1.0.0"
