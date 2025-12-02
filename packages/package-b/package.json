@@ -1,6 +1,6 @@
 {
   "name": "@temp-monorepo-publish-testing/package-b",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Example package for temp-monorepo-publish-testing monorepo b",
   "type": "module",
   "repository": {
@@ -26,7 +26,7 @@
     "@temp-monorepo-publish-testing/package-a": "*"
   },
   "peerDependencies": {
-    "@temp-monorepo-publish-testing/package-a": "^0.0.1"
+    "@temp-monorepo-publish-testing/package-a": "^1.0.0"
   },
   "publishConfig": {
     "access": "public"
